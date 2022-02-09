@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,600');
+
+        body {
+            background: #f3f3f3;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .demo-box {
+            background: white;
+            width: 80%;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .5);
+        }
+        .demo-box {
+            margin: 100px auto;
+        }
+
+        .one {
+            background: #713c9e;
+            height: 50px;
+            margin-bottom: 100px;
+        }
+
+        .two {
+            background: #EC4067;
+            height: 50px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .three {
+            background: #A01A7D;
+            height: 50px;
+            margin-top: 200px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="demo-box">
+        <div class="one">one</div>
+        <div class="two">two</div>
+        <div class="three">Three</div>
+    </div>
+
+    <div>Margin bottom of one & Margin top of second div collapses because they have equal margin.</div>
+    <div>Margin bottom of second is 100px & Margin top of third is 200px bigger the margins wins thus 3rd div margin wins.</div>
+</body>
+
+</html>

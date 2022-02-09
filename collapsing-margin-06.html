@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,600");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1,h2,h3 {
+        margin-top: 1em; /* em depends on font size of element*/
+        margin-bottom: .5em;
+      }
+
+      p{
+        margin-bottom: 0.75em;
+      }
+
+      body {
+        background: #f3f3f3;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.6;
+      }
+
+      .demo-box {
+        background: white;
+        width: 80%;
+        margin: 100px auto;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+        padding: 50px;
+      }
+
+      .demo-box {
+        display: fixed;
+      }
+
+      .intro {
+        background: lightblue;
+        padding: 10px;
+        border: 10px solid grey;
+      }
+
+      .intro h1 {
+        font-size: 50px;
+        color: steelblue;
+        margin-top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-box">
+      <div class="intro">
+        <h1>HTML Ipsum Presents</h1>
+      </div>
+
+      <p>
+        Because of default margin in h1 element, the padding in intro box seems more than actual.
+      </br>
+        content height of intro div will be = content height of h1(80px) + margin-top(150px) + margin-bottom (33.500px) = 263.500px
+      </br>
+        content width of intro = 1026.390px
+      <br>
+        because of padding and border of 10px in intro box total height will be (263.500px+20px+20px)
+      <br>
+        total width = content width of intro(1026.390px) + padding(20px) + border(20px);
+      </p>
+
+      <p>
+        To really wanna control how something gonna look make default margin of element as zero on it or select everything and do margin: 0 and padding: 0
+      </p>
+
+      <p>
+        <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
+        et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+        vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+        quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris
+        placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+        pharetra. Vestibulum erat wisi, condimentum sed,
+        <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum,
+        elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus
+        lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar
+        facilisis. Ut felis.
+      </p>
+
+      <h2>Header Level 2</h2>
+
+      <ol>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ol>
+
+      <blockquote>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+          magna. Cras in mi at felis aliquet congue. Ut a est eget ligula
+          molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis
+          mollis, tellus est malesuada tellus, at luctus turpis elit sit amet
+          quam. Vivamus pretium ornare est.
+        </p>
+      </blockquote>
+
+      <h3>Header Level 3</h3>
+
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+      </ul>
+
+      <pre><code>
+        #header h1 a {
+        display: block;
+        width: 300px;
+        height: 80px;
+      }
+      </code></pre>
+    </div>
+  </body>
+</html>
