@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+      }
+
+      body {
+        font-size: 2em;
+        border: 2px solid limegreen;
+        background: pink;
+      }
+
+      .example {
+        background: #234;
+        color: white;
+        border: 2px solid red;
+        height: 100%; /* this won't work unless its parent body has explicit height property */
+      }
+
+      .example2 {
+        background: lightgray;
+        color: steelblue;
+        border: 2px solid blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      The height CSS property specifies the height of an element. By default,
+      the property defines the height of the content area. If box-sizing is set
+      to border-box, however, it instead determines the height of the border
+      area. The min-height and max-height properties override height. When you
+      are taking of percentage you must ask of what percentage, % of what
+      percentage always based on containing block most of the time it is parent,
+      so height here is 100% of the body. because i don't have lot of content
+      thus my body is really small. the body is actually really small and not
+      everyone realizes that because if you do come and put a background on your
+      body let's just do a pink background on here um the whole viewport will
+      fill with that color even though you can see here i have a border on it on
+      the body and the body's staying small so this the background on the body
+      changing the color isn't only going on there it's actually filling up the
+      whole viewport uh it's filling up the whole viewport or the whole page if
+      you have scrolling so that is just something to be aware of. red is border
+      color of example div and body has border green. body has height of auto by
+      default. now example div is 100% of its parent div thus (body). body
+      height is auto depends on its content. height:100% works if the parent
+      container has a specified height property else, it won't work
+    </div>
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, possimus
+      voluptates aliquam at culpa nisi eveniet, totam officiis eos soluta est
+      vitae impedit. Vitae assumenda numquam fugit praesentium voluptate
+      deserunt?
+    </div>
+    <div class="example2">
+      Percentages:	The percentage is calculated with respect to the height of the generated box's containing block. If the height of the containing block is not specified explicitly (i.e., it depends on content height), and this element is not absolutely positioned, the value computes to auto. A percentage height on the root element is relative to the initial containing block.
+    </div>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Link: Height Mozilla</a>
+  </body>
+</html>
